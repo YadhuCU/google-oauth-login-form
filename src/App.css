@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ff-primary: "Poppins", sans-serif;
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --clr-white: #f2f2f2;
+  --clr-blue-dark: #021024;
+  --clr-blue-medium: #005ef3;
+  --clr-blue-light: #c1e8ff;
+  --clr-gray: #7da0ca;
+  --fs-xs: 0.5rem;
+  --fs-sm: 0.75rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xll: 1.75rem;
+
+  --br: 10px;
+  --bw: 2px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-blue-dark);
+  color: var(--clr-white);
+}
+
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.or p {
+  background: var(--clr-blue-dark);
+  box-shadow: 0px 0px 20px 5px var(--clr-blue-dark);
+}
+
+.or::after {
+  content: "";
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--clr-gray);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
