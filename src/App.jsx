@@ -55,10 +55,10 @@ function App() {
   useGSAP(
     () => {
       gsap.from(".animation", {
-        x: "100%",
+        x: "100px",
         opacity: 0,
-        duration: 1,
-        stagger: 0.2,
+        duration: 0.5,
+        stagger: 0.1,
       });
     },
     { dependencies: [profile], scope: container },
